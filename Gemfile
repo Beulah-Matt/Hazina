@@ -1,5 +1,7 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
+#serializer gem
+gem 'active_model_serializers'
 
 #ruby "2.7.0"
 
