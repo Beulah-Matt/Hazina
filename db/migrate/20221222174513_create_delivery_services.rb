@@ -6,7 +6,7 @@ class CreateDeliveryServices < ActiveRecord::Migration[7.0]
       t.string :location
       t.integer :user_id
       t.integer :storage_id
-      t.integer :rate
+      t.string :rate
 
       t.timestamps
     end
