@@ -10,26 +10,26 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_12_22_200424) do
+ActiveRecord::Schema[7.0].define(version: 2022_12_24_082314) do
   create_table "admins", force: :cascade do |t|
     t.string "name"
     t.string "email"
-    t.integer "password_digest"
+    t.string "password_digest"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "customers", force: :cascade do |t|
     t.string "location"
-    t.integer "password_digest"
+    t.string "password_digest"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "delivery_services", force: :cascade do |t|
+  create_table "delivery_Services", force: :cascade do |t|
     t.boolean "availability"
     t.string "location"
-    t.string "rate"
+    t.integer "rate"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "delivery_type"
@@ -44,6 +44,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_22_200424) do
     t.string "photo_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "customer_id"
   end
 
   create_table "storage_units", force: :cascade do |t|
