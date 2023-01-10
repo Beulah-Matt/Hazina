@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  type: 
+  availability: false
+  location: MyString
+  user_id: 1
+  storage_id: 1
+  rate: MyString
+
+two:
+  type: 
+  availability: false
+  location: MyString
+  user_id: 1
+  storage_id: 1
+  rate: MyString
